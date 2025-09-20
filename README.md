@@ -22,7 +22,7 @@
 ---
 
 ## 📷 画面イメージ
-![ログイン画面](images/login.png)  
+![ログイン画面](images/スクリーンショット 2025-09-20 145501.png)  
 ![ダッシュボード](images/dashboard.png)  
 ![シフト表作成](images/shift_create.png)  
 ![勤怠確認](images/attendance.png)  
@@ -40,3 +40,4 @@
 ## 👤 開発者
 - 藤本翔平：作業プログラムコーディング、データベース実装  
 - 他2名：プログラム・デザイン協力
+
