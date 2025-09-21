@@ -56,6 +56,8 @@
 │ ├─ Comboltemcs.cs 　年、月、日の処理をコンボボックスに与える処理(外部クラス)
 │ └─ DBHelper.cs 　データベースに接続するコードを保持しているクラス(外部クラス)
 ```
+---
+```
 ## データベース
 CREATE TABLE staff (
    staff_id INT IDENTITY(1,1) PRIMARY KEY, --従業員ID
@@ -115,6 +117,7 @@ CREATE TABLE admin (
 ## 👤 開発者
 - 藤本翔平：作業プログラムコーディング、データベース実装  
 - 他2名：プログラム・デザイン協力
+
 
 
 
