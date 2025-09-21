@@ -15,43 +15,37 @@
 ```
 .
 │
-└─ Taguma
+Taguma
 │ README.md アプリの仕様書
 │ images/ アプリの機能ごとの説明画像
 │
-├─ 01_LogIn　　ログインクラス
-│ ├─ Form1.Designer.cs 　画面デザイン
-│ ├─ Form1.cs 　ログインのメインクラス
-│ ├─ Form1.resx 　リソースファイル
-│ └─ Form1.adminDB.cs 　adminデータベースとのパスワード適合処理クラス(外部クラス)
-├─ 02_Dashboard　　ダッシュボードクラス
-│ ├─ Dasyu.Designer.cs 　画面デザイン
-│ ├─ Dasyu.cs 　ダッシュボードのメインクラス
-│ └─ Dasyu.resx 　リソースファイル
+├─ 01_LogIn ログイン機能
+│ ├─ Form1.cs ログインフォーム
+│ └─ Form1.adminDB.cs DBパスワード適合処理（外部クラス）
+│
+├─ 02_Dashboard ダッシュボード
+│ └─ Dasyu.cs ダッシュボードフォーム
+│
 ├─ 03_ShiftSchedule　シフト表作成クラス
 │ ├─01_ShiftScheduleMain
 │ │ ├─01_ShiftScheduleDB 
-│ │ │ ├─ShiftDB.cs 　shiftDataへのデータ挿入、更新、削除(外部クラス)
-│ │ │ └─StaffDB.cs 　staffから従業員の取得をしシフト表に反映いしている(外部クラス)
-│ │ ├─ShiftTableBuilder.cs 　シフト表の作成クラス(外部クラス)
-│ │ ├─Shifts.Designer.cs　　フォームデザイン
-│ │ ├─Shifts.cs 　シフト表のメインクラス
-│ │ └─Shifts.resx　　リソースファイル
+│ │ │ ├─ ShiftDB.cs シフトデータ操作（外部クラス）
+│ │ │ └─StaffDB.cs スタッフ情報操作（外部クラス）
+│ │ ├─ Shifts.cs シフト表フォーム
+│ │ └─ ShiftTableBuilder.cs シフト表作成（外部クラス）
+│ │
 │ ├─02_StaffRegistration
-│ │ ├─StaffRegistration.Designer.cs　　スタッフ登録のメインクラス
-│ │ ├─StaffRegistration.cs 　フォームデザイン
-│ │ ├─StaffRegistration.resx　　リソースファイル
-│ │ └─StaffRegistrationDB.cs　　staffへのデータ追加(外部クラス)
-│ ├─03_ShiftHpoe　　別アプリのため実装してないこの画面に従業員からのシフト希望が表示される
-│ │ ├─ShiftHope.Designer.cs　　フォームデザイン
+│ │ ├─ StaffRegistration.cs スタッフ登録フォーム
+│ │ └─ StaffRegistrationDB.cs スタッフ登録処理（外部クラス）
+│ │
+│ ├─03_ShiftHpoe　　(未実装)
 │ │ ├─ShiftHope.cs　　シフト希望のメインクラス
-│ │ └─ShiftHope.resx 　リソースファイル
+│ │
 │ ├─ 04_Work　勤怠管理確認クラス
-│ ├─ Work.Designer.cs 　画面デザイン
-│ ├─ Work.cs 　勤怠管理のメインクラス
-│ ├─ Work.resx 　リソースファイル
-│ ├─ WorkItem.cs 　指定した日の従業員が働く時間が見れる(外部クラス)
-│ └─ WorkItemDB.cs 　shiftDataから選択した日付のシフトデータを取得する処理(外部クラス)
+│ │ ├─ Work.cs 勤怠管理フォーム
+│ │ ├─ WorkItem.cs 勤怠データ表示（外部クラス）
+│ │ └─ WorkItemDB.cs 勤怠データ取得（外部クラス）
+│ │
 │ ├─ ComonClass　共通の処理を格納したクラス
 │ ├─ Comboltemcs.cs 　年、月、日の処理をコンボボックスに与える処理(外部クラス)
 │ └─ DBHelper.cs 　データベースに接続するコードを保持しているクラス(外部クラス)
@@ -118,6 +112,7 @@ CREATE TABLE admin (
 ## 👤 開発者
 - 藤本翔平：作業プログラムコーディング、データベース実装  
 - 他2名：プログラム・デザイン協力
+
 
 
 
