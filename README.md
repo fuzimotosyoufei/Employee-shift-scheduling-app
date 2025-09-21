@@ -57,8 +57,9 @@
 │ └─ DBHelper.cs 　データベースに接続するコードを保持しているクラス(外部クラス)
 ```
 ---
-```
+
 ## データベース
+```
 CREATE TABLE staff (
    staff_id INT IDENTITY(1,1) PRIMARY KEY, --従業員ID
    staff_name VARCHAR(255) NOT NULL,--従業員名
@@ -117,6 +118,7 @@ CREATE TABLE admin (
 ## 👤 開発者
 - 藤本翔平：作業プログラムコーディング、データベース実装  
 - 他2名：プログラム・デザイン協力
+
 
 
 
