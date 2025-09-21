@@ -11,6 +11,8 @@
 
 ---
 ## 構成管理
+
+```
 .
 │
 └─ Taguma
@@ -53,7 +55,7 @@
 │ ├─ ComonClass　共通の処理を格納したクラス
 │ ├─ Comboltemcs.cs 　年、月、日の処理をコンボボックスに与える処理(外部クラス)
 │ └─ DBHelper.cs 　データベースに接続するコードを保持しているクラス(外部クラス)
----
+```
 ## データベース
 CREATE TABLE staff (
    staff_id INT IDENTITY(1,1) PRIMARY KEY, --従業員ID
@@ -80,6 +82,7 @@ CREATE TABLE admin (
 　created_at datetime NOT NULL--ログイン履歴
   CONSTRAINT fk_shift_staff FOREIGN KEY (staff_id) REFERENCES staff(staff_id)
 );
+
 ---
 ## 🚀 実行方法
 1. GitHubから `Taguma.exe` をダウンロード![Taguma.exe]( Taguma.exe) できないかもしれない
@@ -112,6 +115,7 @@ CREATE TABLE admin (
 ## 👤 開発者
 - 藤本翔平：作業プログラムコーディング、データベース実装  
 - 他2名：プログラム・デザイン協力
+
 
 
 
