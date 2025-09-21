@@ -82,7 +82,7 @@ CREATE TABLE admin (
 　created_at datetime NOT NULL--ログイン履歴
   CONSTRAINT fk_shift_staff FOREIGN KEY (staff_id) REFERENCES staff(staff_id)
 );
-
+```
 ---
 ## 🚀 実行方法
 1. GitHubから `Taguma.exe` をダウンロード![Taguma.exe]( Taguma.exe) できないかもしれない
@@ -115,6 +115,7 @@ CREATE TABLE admin (
 ## 👤 開発者
 - 藤本翔平：作業プログラムコーディング、データベース実装  
 - 他2名：プログラム・デザイン協力
+
 
 
 
